@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tVnamaDtPgnAdmin"
+        android:layout_width="148dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="20dp"
+        android:text="Nama"
+        app:layout_constraintEnd_toStartOf="@+id/edNamaDtPgn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tVNikDtPgnAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/tVNikDtPgnAdmin" />
+
+    <TextView
+        android:id="@+id/tVtglLahirDtPgnAdmin"
+        android:layout_width="143dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="28dp"
+        android:text="Tanggal Lahir"
+        app:layout_constraintEnd_toStartOf="@+id/edDate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/GenderPenyewa"
+        app:layout_constraintTop_toBottomOf="@+id/GenderPenyewa" />
+
+    <TextView
+        android:id="@+id/tVtelpDtPgnAdmin"
+        android:layout_width="143dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:text="No Telp"
+        app:layout_constraintEnd_toStartOf="@+id/edPhone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tVtglLahirDtPgnAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/tVtglLahirDtPgnAdmin" />
+
+    <TextView
+        android:id="@+id/GenderPenyewa"
+        android:layout_width="143dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="20dp"
+        android:text="Jenis Kelamin"
+        app:layout_constraintStart_toStartOf="@+id/tVnamaDtPgnAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/tVnamaDtPgnAdmin" />
+
+    <EditText
+        android:id="@+id/edNamaDtPgn"
+        android:layout_width="209dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNikDtPgn" />
+
+    <EditText
+        android:id="@+id/edNikDtPgn"
+        android:layout_width="206dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVdatapembayaran" />
+
+    <TextView
+        android:id="@+id/tVNikDtPgnAdmin"
+        android:layout_width="148dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="NIK"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVdatapembayaran" />
+
+    <TextView
+        android:id="@+id/tVdatapembayaran"
+        android:layout_width="363dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/my_custom_color"
+        android:text="Data Penyewa"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edDate"
+        android:layout_width="208dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdJk" />
+
+    <EditText
+        android:id="@+id/edPhone"
+        android:layout_width="109dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="116dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edDate" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rVpenyewa"
+        android:layout_width="407dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/BtnInsertPny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="INSERT"
+        app:layout_constraintBottom_toBottomOf="@+id/BtnUpdatePny"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/BtnUpdatePny"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/BtnUpdatePny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="UPDATE"
+        app:layout_constraintEnd_toStartOf="@+id/BtnDeletePny"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toEndOf="@+id/BtnInsertPny"
+        app:layout_constraintTop_toBottomOf="@+id/imPenyewa" />
+
+    <Button
+        android:id="@+id/BtnDeletePny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="DELETE"
+        app:layout_constraintBottom_toBottomOf="@+id/BtnUpdatePny"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/BtnUpdatePny"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imPenyewa"
+        android:layout_width="92dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edDate"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@color/my_custom_color" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="369dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:text="RINCIAN DAFTAR PENYEWA KOS"
+        android:textAlignment="center"
+        android:textColor="@color/my_custom_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnUpdatePny"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/sPKamar"
+        android:layout_width="255dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/tVtelpDtPgnAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/edPhone" />
+
+    <RadioGroup
+        android:id="@+id/rdJk"
+        android:layout_width="228dp"
+        android:layout_height="71dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNamaDtPgn">
+
+        <RadioButton
+            android:id="@+id/rdL"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Laki - Laki" />
+
+        <RadioButton
+            android:id="@+id/rdP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perempuan" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

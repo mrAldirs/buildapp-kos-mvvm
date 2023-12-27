@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "143053666949",
+    "project_id": "build-kos",
+    "storage_bucket": "build-kos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143053666949:android:0572ffda26f9cc8282c7ec",
+        "android_client_info": {
+          "package_name": "com.project.build_kos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBi02urcPjlyvptYJdkHlg7x6-XQFBoeGg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
