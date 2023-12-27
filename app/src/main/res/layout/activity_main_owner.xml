@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+            android:id="@+id/btn_insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert"
+            android:textAllCaps="false"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"/>
+
+    <TextView
+            style="@style/TextAppearance.AppCompat.Title"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MY KOS"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btn_insert"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_kos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_title"
+            android:layout_above="@id/bottom_navigasi"
+            android:layout_margin="12dp"/>
+
+    <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:elevation="8dp"
+            android:layout_above="@id/bottom_navigasi"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigasi"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:menu="@menu/bottom_navigasi_owner"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

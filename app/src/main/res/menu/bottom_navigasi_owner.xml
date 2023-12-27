@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/nav_kos"
+            android:title="Data Kos"
+            android:icon="@drawable/home"/>
+
+<!--    <item-->
+<!--            android:id="@+id/nav_rooms"-->
+<!--            android:title="Rooms"-->
+<!--            android:icon="@drawable/kamar"/>-->
+
+    <item
+            android:id="@+id/nav_history"
+            android:title="History Transaction"
+            android:icon="@drawable/pembayaran"/>
+
+    <item
+            android:id="@+id/nav_complain"
+            android:title="Complain"
+            android:icon="@drawable/pout"/>
+</menu>

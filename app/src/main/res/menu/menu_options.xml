@@ -2,6 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+            android:id="@+id/menu_transaction"
+            android:title="Transaction" />
+
+    <item
+            android:id="@+id/menu_profile"
+            android:title="Profile" />
+
+    <item
         android:id="@+id/menuContx4"
         android:title="Logout" />
 </menu>

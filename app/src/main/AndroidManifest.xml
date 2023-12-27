@@ -40,13 +40,19 @@
         <!-- Admin -->
         <activity android:name=".views.admin.MainActivity"
                   android:screenOrientation="portrait"/>
+        <activity android:name=".views.admin.TransactionActivity"
+                    android:screenOrientation="portrait"/>
 
         <!-- Tenant -->
         <activity android:name=".views.tenant.MainActivity"
                   android:screenOrientation="portrait"/>
+        <activity android:name=".views.tenant.ShowActivity"
+                  android:screenOrientation="portrait"/>
 
         <!-- Owner -->
         <activity android:name=".views.owner.MainActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".views.owner.KosInsertActivity"
                   android:screenOrientation="portrait"/>
     </application>
 

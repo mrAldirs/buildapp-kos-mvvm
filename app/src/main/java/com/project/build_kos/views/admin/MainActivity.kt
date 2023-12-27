@@ -1,5 +1,6 @@
 package com.project.build_kos.views.admin
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.project.build_kos.databinding.ActivityMainAdminBinding
@@ -12,5 +13,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainAdminBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportActionBar?.title = "Admin"
+
+        binding.btTransaksi.setOnClickListener {
+            startActivity(Intent(this, TransactionActivity::class.java))
+        }
     }
 }
