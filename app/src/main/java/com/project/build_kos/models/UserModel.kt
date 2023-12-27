@@ -14,4 +14,8 @@ class UserModel {
         val phone: String,
         val address: String,
     )
+
+    data class status (
+        val status: String
+    )
 }

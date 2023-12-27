@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-            android:id="@+id/menu_transaction"
-            android:title="Transaction" />
-
-    <item
-            android:id="@+id/menu_profile"
-            android:title="Profile" />
-
-    <item
-        android:id="@+id/menuContx4"
-        android:title="Logout" />
+            android:id="@+id/mn_option"
+            android:title="Settings"
+            android:icon="@drawable/ic_setting"
+            android:orderInCategory="100"
+            app:showAsAction="always" />
 </menu>

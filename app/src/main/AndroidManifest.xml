@@ -48,6 +48,8 @@
                   android:screenOrientation="portrait"/>
         <activity android:name=".views.tenant.ShowActivity"
                   android:screenOrientation="portrait"/>
+        <activity android:name=".views.tenant.TransactionActivity"
+                    android:screenOrientation="portrait"/>
 
         <!-- Owner -->
         <activity android:name=".views.owner.MainActivity"

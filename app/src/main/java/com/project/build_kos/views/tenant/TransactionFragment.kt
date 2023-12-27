@@ -56,7 +56,7 @@ class TransactionFragment : DialogFragment() {
                 binding.inpEnd.text.toString(),
                 amount.toString(),
                 "",
-                "not paid"
+                "pending"
             )
 
             transactionViewModel.create(data).observe(requireActivity(), Observer {
