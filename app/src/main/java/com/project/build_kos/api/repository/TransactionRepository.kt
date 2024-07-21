@@ -268,7 +268,7 @@ class TransactionRepository {
                 for (document in documents) {
                     val kos_id = document.id
                     firestore.collection(Data.kos).document(kos_id)
-                        .update("status", "available")
+                        .update("status", "no available")
                 }
             }
 
@@ -279,7 +279,7 @@ class TransactionRepository {
                 for (document in documents) {
                     val tenant_id = document.id
                     firestore.collection(Data.tenant).document(tenant_id)
-                        .update("status", "available")
+                        .update("status", "no active")
                         .addOnSuccessListener { result.value = true }
                         .addOnFailureListener { result.value = false }
                 }
